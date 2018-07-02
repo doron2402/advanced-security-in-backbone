@@ -3,15 +3,19 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "engines": {
     "node": "0.10.25"
   },
   "dependencies": {
-    "express": "4.0.0",
+    "express": "4.16.0",
     "nodemon": "~0.7.8",
     "uid2": "0.0.3",
-    "ejs": "~2.5.5"
-  }
+    "ejs": "~2.5.5",
+    "snyk": "^1.88.0"
+  },
+  "snyk": true
 }
